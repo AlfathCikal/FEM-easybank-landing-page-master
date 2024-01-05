@@ -1,0 +1,25 @@
+#Articles h1{
+   font-size: 32px;
+   font-weight: 400;
+   padding-top: 75px;
+   padding-left: 25px;
+   margin-bottom: 24px;
+}
+
+#Articles .article-list{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: stretch;
+   margin: auto;
+   padding: 0 25px;
+   padding-bottom: 75px;
+   gap: 25px;
+}
+
+@media screen and (max-width:742px){
+   #Articles .article-list{
+      flex-direction: column;
+      align-items: center;
+   }
+}

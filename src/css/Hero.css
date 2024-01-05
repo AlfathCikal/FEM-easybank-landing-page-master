@@ -1,0 +1,99 @@
+#Hero {
+   position: relative;
+   display: flex;
+   align-items: stretch;
+}
+
+#Hero .text{
+   flex: 0 0 40%;
+   align-self: center;
+   padding: 50px 12px;
+}
+
+#Hero .text h1{
+   font-size: 48px;
+   font-weight: 300;
+   margin-bottom: 24px;
+}
+#Hero .text p{
+   font-size: 18px;
+   line-height: 1.3em;
+   font-weight: 400;
+   color: var(--Grayish-Blue);
+   margin-bottom: 24px;
+}
+
+#Hero .hero-image{
+   text-align: end;
+   position: relative;
+   right: -75px;
+   height: 95vh;
+   width: 100%;
+   background:url('../images/bg-intro-desktop.svg');
+   background-position: left center;
+   background-size: 150%;
+   background-repeat: no-repeat;
+}
+#Hero .hero-image::after{
+      content: '';
+      width: 90%;
+      height: 120%;
+      top: 0;
+      right: -75px;
+      position: absolute;
+      background-image: url('../images/image-mockups.png');
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: cover;
+}
+
+@media screen and (max-width:1024px){
+   #Hero .text h1{
+      font-size: 32px;
+      font-weight: 400;
+   }
+   #Hero .text p{
+      font-size: 16px;
+   }
+   #Hero .hero-image{
+      height: 85vh;
+   }
+   #Hero .hero-image::after{
+      height: 110%;
+   }
+}
+
+@media screen and (max-width:742px){
+   #Hero {
+      margin-top: 56px;
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 0;
+   }
+   #Hero .hero-image{
+      right: 0;
+      height: 397px;
+      width: 100%;
+      position: relative;
+      background-image: url('../images/bg-intro-mobile.svg');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+   }
+   #Hero .hero-image::after{
+      content: '';
+      width: 90%;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      background-image: url('../images/image-mockups.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+   }
+   #Hero .text{
+      padding:25px 50px;
+   }
+}

@@ -1,0 +1,117 @@
+
+#Footer .container{
+   display: flex;
+   padding: 50px;
+   height: 200px;
+}
+
+#Footer .container ul{
+   display: flex;
+   list-style: none;
+}
+#Footer ul a {
+   color: var(--Light-Grayish-Blue);
+   font-size: 16px;
+   font-weight: 300;
+   text-decoration: none;
+}
+
+#Footer .brand-n-social{
+   flex: 1 0;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+#Footer .brand-n-social ul.social-media{
+   display: flex;
+   gap: 12px;
+   align-items: center;
+}
+#Footer .brand-n-social ul.social-media .social-icon{
+   display: block;
+   width: 20px;
+   height: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+/* define the icon */
+.social-media .social-icon.facebook{background-image: url('../images/icon-facebook.svg');}
+.social-media .social-icon.youtube{background-image: url('../images/icon-youtube.svg')}
+.social-media .social-icon.twitter{background-image: url('../images/icon-twitter.svg')}
+.social-media .social-icon.pinterest{background-image: url('../images/icon-pinterest.svg')}
+.social-media .social-icon.instagram{background-image: url('../images/icon-instagram.svg')}
+/* Hover */
+.social-media .social-icon.facebook:hover{background-image: url('../images/icon-facebook-hover.svg');}
+.social-media .social-icon.youtube:hover{background-image: url('../images/icon-youtube-hover.svg')}
+.social-media .social-icon.twitter:hover{background-image: url('../images/icon-twitter-hover.svg')}
+.social-media .social-icon.pinterest:hover{background-image: url('../images/icon-pinterest-hover.svg')}
+.social-media .social-icon.instagram:hover{background-image: url('../images/icon-instagram-hover.svg')}
+
+#Footer .container ul.links{
+   flex: 2 0;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 16px;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+#Footer .container ul.links a:hover{
+   color: var(--Lime-Green);
+}
+
+#Footer .request-n-copyright{
+   flex: 1 0;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 18px;
+   justify-content: center;
+}
+#Footer .request-n-copyright span{
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--Grayish-Blue);
+}
+#Footer .attribution{
+   color: var(--Grayish-Blue);
+   padding: 25px;
+}
+#Footer .attribution a{
+   text-decoration: none;
+   color: var(--Lime-Green);
+   text-align: center;
+   width: 100%;
+   font-size: 16px;
+}
+
+@media screen and (max-width:1024px){
+   #Footer .container ul.links{
+      padding: 0 24px;
+      box-sizing: border-box;
+   }
+}
+@media screen and (max-width:742px){
+   #Footer .container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      gap: 24px;
+   }
+   #Footer .container .brand-n-social{
+      gap: 24px;
+   }
+   #Footer .container ul.links{
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+   }
+   #Footer .request-n-copyright{
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+   }
+}

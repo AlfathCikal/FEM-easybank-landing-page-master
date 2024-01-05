@@ -1,0 +1,21 @@
+.feature-card{
+   width: 250px;
+}
+.feature-card img{
+   width: 75px;
+   height: 75px;
+}
+
+.feature-card h2{
+   font-size: 22px;
+   font-weight: 400;
+   color: #2d314d;
+   margin: 1em 0;
+}
+
+.feature-card p{
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.4em;
+   color: var(--Grayish-Blue);
+}

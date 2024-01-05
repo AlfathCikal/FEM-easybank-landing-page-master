@@ -1,0 +1,106 @@
+/* We have Roboto font in 300;400;700 weight*/
+:root{
+   --Dark-Blue: #2d314d;
+   --Lime-Green: #31d35c;
+   --Bright-Cyan: #2bb7da;
+
+   --Grayish-Blue: hsl(233, 8%, 62%);
+   --Light-Grayish-Blue: hsl(220, 16%, 96%);
+   --Very-Light-Gray: hsl(0, 0%, 98%);
+
+   --gradient-color: linear-gradient(135deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+}
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   font-family: 'Public Sans', sans-serif;
+   font-size: 18px;
+   overflow-x: hidden;
+}
+
+header#Nav, 
+footer,
+.Hero,
+.Benefit,
+.Articles{
+   padding: 0 75px;
+}
+
+header#Nav{
+   background-color: white;
+}
+.Hero,  .Articles{
+   background-color: var(--Very-Light-Gray);;
+}
+.Benefit{
+   background-color: var(--Light-Grayish-Blue);
+}
+footer{
+   background-color: var(--Dark-Blue);
+}
+
+.btn{
+   position: relative;
+   display: inline-block;
+   font-size: 16px;
+   padding: .75em 2em;
+   color: white;
+   border-radius: 4em;
+   font-weight: 400;
+   cursor: pointer;
+   background: var(--gradient-color);
+}
+.btn:hover::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   border-radius: 4em;
+   background-color: rgba(255, 255, 255, 0.4);
+}
+
+h1.title{
+   font-size: 32px;
+   font-weight: 400;
+   margin-bottom: 24px;
+   color: var(--Dark-Blue);
+}
+
+.card{
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   padding: 18px;
+}
+
+/* tablet */
+@media screen and (max-width:1024px){
+   .btn{
+      font-size: 14px;
+   }
+   header#Nav, 
+   footer,
+   .Hero,
+   .Benefit,
+   .Articles{
+      padding: 0 50px;
+   }
+}
+
+/* Mobile */
+@media screen and (max-width:742px){
+   header#Nav, 
+   footer,
+   .Hero,
+   .Benefit,
+   .Articles{
+      padding: 0 40px;
+   }
+}
