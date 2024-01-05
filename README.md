@@ -36,8 +36,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Source Code](https://github.com/AlfathCikal/FEM-easybank-landing-page-master)
+- Live Site URL: [Live Site URL](https://alfathcikal.github.io/FEM-easybank-landing-page-master/)
 
 ## My process
 
